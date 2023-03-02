@@ -5,11 +5,8 @@ use std::{cmp::Ordering, io};
  */
 fn main() {
     println!("猜数！");
-    let b: u32 = 25 * 200;
-    let a: u8 = (b / 100).try_into().unwrap();
-    println!("b={}, a(b/10)={}", b, a);
     let secret_number = rand::thread_rng().gen_range(1..101);
-    println!("神秘数字是：{}", secret_number);
+    // println!("神秘数字是：{}", secret_number);
     loop {
         println!("猜测一个数: ");
         let mut _guess = String::new();
