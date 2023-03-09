@@ -23,7 +23,7 @@ fn main() {
                 continue;
             }
         };
-        match _guess.cmp(&secret_number) {
+            match _guess.cmp(&secret_number) {
             Ordering::Less => println!("Too small!"),
             Ordering::Greater => println!("Too big!"),
             Ordering::Equal => {
